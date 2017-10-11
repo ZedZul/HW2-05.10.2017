@@ -10,13 +10,15 @@
     <EditText
         android:id="@+id/input_edit_text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="@string/input_field_str_res"
+        android:inputType="number"/>
 
     <Button
-        android:id="@+id/calculate_button"
+        android:id="@+id/solve_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:enabled="false"
+        android:enabled="true"
         android:text="@string/solve_it_str_res"/>
 
     <TextView

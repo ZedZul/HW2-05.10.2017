@@ -1,8 +1,6 @@
 package com.zedzul.github.hw2_05102017;
 
-public interface ICalculator {
+interface ICalculator {
 
-    String solve();
-
-    void setVariables();
+    String solve(String value);
 }

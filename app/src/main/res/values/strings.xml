@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">HW2-05.10.2017</string>
+    <string name="app_name">HW2–05.10.2017</string>
     <string name="solve_it_str_res">Solve it</string>
+    <string name="input_field_str_res">Input field</string>
 </resources>
