@@ -20,22 +20,22 @@ import static org.hamcrest.Matchers.allOf;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class EspressoTest {
+public class RecordEspressoTest {
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
     @Test
     public void espressoTest() {
-        ViewInteraction appCompatButton = onView(
+        final ViewInteraction appCompatButton = onView(
                 allOf(withId(R.id.solve_button), withText("Solve it"), isDisplayed()));
         appCompatButton.perform(click());
 
-        ViewInteraction appCompatEditText = onView(
+        final ViewInteraction appCompatEditText = onView(
                 allOf(withId(R.id.input_edit_text), isDisplayed()));
         appCompatEditText.perform(click());
 
-        ViewInteraction appCompatEditText2 = onView(
+        final ViewInteraction appCompatEditText2 = onView(
                 allOf(withId(R.id.input_edit_text), isDisplayed()));
         appCompatEditText2.perform(replaceText("523"), closeSoftKeyboard());
 

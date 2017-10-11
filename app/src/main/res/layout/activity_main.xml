@@ -12,13 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/input_field_str_res"
-        android:inputType="number"/>
+        android:inputType="text"/>
 
     <Button
         android:id="@+id/solve_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:enabled="true"
+        android:enabled="false"
         android:text="@string/solve_it_str_res"/>
 
     <TextView
