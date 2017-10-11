@@ -25,12 +25,12 @@ public class MainActivityManualEspressoTest {
         final ViewInteraction pSolveButton = onView(withId(R.id.solve_button));
         final ViewInteraction pResultTextView = onView(withId(R.id.result_text_view));
 
-        //TODO Espresso. Test passed
+        //TODO: Espresso. Test passed
         pInputEditText.perform(typeText("77+41"));
         pSolveButton.perform(click());
         pResultTextView.check(matches(withText("118")));
 
-        //TODO Espresso. Test failed
+        //TODO: Espresso. Test failed
         //pResultTextView.check(matches(withText("117")));
 
     }
